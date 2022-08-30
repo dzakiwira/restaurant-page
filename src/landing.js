@@ -1,19 +1,22 @@
+import buildHome from './home';
+
 function buildHeader() {
     const header = document.createElement('header');
     header.classList.add('header');
 
     const restaurantName = document.createElement('h1');
     restaurantName.classList.add('resaurant-name');
-    restaurantName.textContent = 'Pizzeria Gino Sorbillo';
+    restaurantName.textContent = 'Il Pizzavendolo';
 
     header.appendChild(restaurantName);
     
     return header;
 }
-
 function buildContent() {
     const mainContent = document.createElement('main-content');
     mainContent.classList.add('main-content');
+
+    mainContent.appendChild(buildHome());
 
     return mainContent;
 }
@@ -35,6 +38,7 @@ function buildLanding() {
     const content = document.getElementById('content');
 
     content.appendChild(buildHeader());
+    content.appendChild(buildContent());
     content.appendChild(buildFooter());
 }
 
