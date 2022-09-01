@@ -46,6 +46,11 @@ img {
     justify-content: space-between;
 }
 
+.map {
+    width: 600px;
+    height: 400px;
+}
+
 .footer {
     display: flex;
     color: black;
