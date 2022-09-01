@@ -30,4 +30,10 @@ function buildHome() {
     return home;
 }
 
-export default buildHome;
+function loadHome() {
+    const mainContent = document.getElementById('main-content')
+    mainContent.textContent = ''
+    mainContent.appendChild(buildHome())
+  }
+
+export default loadHome;
