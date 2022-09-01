@@ -19,4 +19,10 @@ function buildContact() {
     return contact;
 }
 
-export default buildContact;
+function loadContact() {
+    const mainContent = document.getElementById('main-content')
+    mainContent.textContent = ''
+    mainContent.appendChild(buildContact())
+  }
+
+export default loadContact;
