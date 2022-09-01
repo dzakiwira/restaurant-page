@@ -1,4 +1,5 @@
 import buildHome from './home';
+import buildContact from './contact';
 
 function buildHeader() {
     const header = document.createElement('header');
@@ -16,7 +17,8 @@ function buildContent() {
     const mainContent = document.createElement('main-content');
     mainContent.classList.add('main-content');
 
-    mainContent.appendChild(buildHome());
+    // mainContent.appendChild(buildHome());
+    mainContent.appendChild(buildContact());
 
     return mainContent;
 }
