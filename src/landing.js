@@ -1,5 +1,6 @@
 import loadHome from './home';
 import loadContact from './contact';
+import loadMenu from './menu';
 
 function buildHeader() {
     const header = document.createElement('header');
@@ -33,7 +34,7 @@ function buildNav() {
     menuButton.addEventListener("click", (e) => {
         if (e.target.classList.contains("active")) return;
         setButtonState(menuButton);
-        // loadMenu();
+        loadMenu();
       });
 
     const contactButton = document.createElement('button');
@@ -70,9 +71,6 @@ function buildContent(tab) {
     mainContent.classList.add('main-content');
     mainContent.setAttribute('id', 'main-content');
 
-    // mainContent.appendChild(buildHome());
-    // mainContent.appendChild(buildContact());
-
     return mainContent;
 }
 
@@ -96,6 +94,8 @@ function buildLanding() {
     content.appendChild(buildNav());
     content.appendChild(buildContent());
     content.appendChild(buildFooter());
+
+    loadHome();
 }
 
 export default buildLanding;
