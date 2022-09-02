@@ -2,13 +2,12 @@ body {
     background-image: url('images/background.jpg');
     background-attachment: fixed;
     background-size: cover;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
 }
 
 img {
-    display: block;
-    height: 400px;
-    width: 50%;
+    border-radius: 10px;
 }
 
 #content {
@@ -32,7 +31,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(255, 255, 255, 0.4);
+    background-color: rgb(255, 255, 255, 0.8);
     box-shadow: 0px 4px 5px rgb(0, 0, 0, 0.1);
     border-radius: 30px;
     padding: 10px 5px;
@@ -44,7 +43,7 @@ img {
 .nav-btn {
     margin: 0 5px;
     padding: 7px 25px;
-    background-color: rgb(255, 255, 255, 0.6);
+    background-color: rgb(255, 255, 255, 1);
     border-radius: 20px;
     border-style: none;
     cursor: pointer;
@@ -57,9 +56,9 @@ img {
 }
 
 .main-content {
-    padding: 2em;
+    padding: 3em 4em;
     max-width: 50em;
-    background-color: rgb(255, 255, 255, 0.6);
+    background-color: rgb(255, 255, 255, 0.8);
     box-shadow: 0px 4px 5px rgb(0, 0, 0, 0.1);
     border-radius: 30px;
 }
@@ -70,10 +69,27 @@ img {
     gap: 2em;
 }
 
+.home img {
+    display: block;
+    height: 400px;
+    width: 50%;
+}
+
 .rest-text {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3em;
+    padding: 0;
+}
+
+.menu img {
+    height: 200px;
 }
 
 .map {
@@ -86,7 +102,7 @@ img {
     color: black;
     width: 100%;
     margin-top: 2em;
-    background-color: rgb(255, 255, 255, 0.6);
+    background-color: rgb(255, 255, 255, 0.8);
     justify-content: center;
 } 
 
